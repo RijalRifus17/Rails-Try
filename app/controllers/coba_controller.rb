@@ -1,7 +1,7 @@
 class CobaController < ApplicationController
     def index
         msg = { 'status' => 'success' }
-        render :json msg
+        render json: msg
     end
 
     
