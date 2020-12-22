@@ -10,11 +10,22 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_21_084733) do
+ActiveRecord::Schema.define(version: 2020_12_21_092802) do
 
   create_table "divisions", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "code"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "login_logs", charset: "utf8mb4", force: :cascade do |t|
+    t.string "email"
+    t.string "ip_adress"
+    t.string "user_agent"
+    t.text "token"
+    t.timestamp "expired"
+    t.integer "status"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

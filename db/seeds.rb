@@ -14,4 +14,4 @@
 #     Division.create(name: division['name'], code: division['code'])
 # end
 
-User.create(name: "admin", email: "admin@admin.dev", role: "admin", password: '1234567', division_id: "1") 
+# User.create(name: "admin", email: "admin@admin.dev", role: "admin", password: '1234567', division_id: "1") 
