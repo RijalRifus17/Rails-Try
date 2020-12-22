@@ -5,13 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-# divisions = [
-#     { "name" => "CSO AG", "code" => "cso_ag" },
-#     { "name" => "CSO DDM", "code" => "cso_ddm" },
-# ]
+divisions = [
+    { "name" => "CSO AG", "code" => "cso_ag" },
+    { "name" => "CSO DDM", "code" => "cso_ddm" },
+]
 
-# divisions.each do |division|
-#     Division.create(name: division['name'], code: division['code'])
-# end
+divisions.each do |division|
+    Division.create(name: division['name'], code: division['code'])
+end
 
-# User.create(name: "admin", email: "admin@admin.dev", role: "admin", password: '1234567', division_id: "1") 
+User.create(name: "admin", email: "admin@admin.dev", role: "admin", password: '1234567', division_id: "1") 
